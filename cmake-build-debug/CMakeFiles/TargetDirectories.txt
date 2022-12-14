@@ -1,0 +1,3 @@
+/home/nascolas/CLionProjects/SmartTV/cmake-build-debug/CMakeFiles/SmartTV.dir
+/home/nascolas/CLionProjects/SmartTV/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nascolas/CLionProjects/SmartTV/cmake-build-debug/CMakeFiles/rebuild_cache.dir
