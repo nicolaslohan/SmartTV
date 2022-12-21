@@ -1,25 +1,27 @@
 //
-// Created by nascolas on 11/30/22.
+// Created by nascolas on 12/20/22.
 //
 
-#ifndef PROJETOFINAL_STREAMING_H
-#define PROJETOFINAL_STREAMING_H
+#ifndef SMARTTV_STREAMING_H
+#define SMARTTV_STREAMING_H
 #include "App.h"
+#include <vector>
 #include "Producao.h"
 #include <ostream>
-using std::ostream;
+using std::vector;
 
-class Streaming : public App{
-    friend ostream operator<<(ostream &, Streaming &);
+class Streaming : public App {
+    friend ostream &operator<<(ostream &, Streaming &);
 public:
-    Streaming(string, string);
-    Producao operator<<(Producao &);
-    Producao operator>>(string);
+    Streaming(string nome, string versao) : App(nome, versao), listaProducoes({}) {};
+
+    Streaming operator<<(Producao &);
+    Streaming operator>>(string);
 
     virtual void run();
 private:
-    vector <Producao> listaProducoes;
+    vector <Producao*> listaProducoes;
 };
 
 
-#endif //PROJETOFINAL_STREAMING_H
+#endif //SMARTTV_STREAMING_H

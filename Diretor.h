@@ -1,21 +1,22 @@
 //
-// Created by nascolas on 11/30/22.
+// Created by nascolas on 12/20/22.
 //
 
-#ifndef PROJETOFINAL_DIRETOR_H
-#define PROJETOFINAL_DIRETOR_H
+#ifndef SMARTTV_DIRETOR_H
+#define SMARTTV_DIRETOR_H
+
+
 #include "Pessoa.h"
 
-class Diretor : public Pessoa{
+class Diretor : public Pessoa {
 public:
-    Diretor(string nome, int qtdProducoesDirigidas) : Pessoa(nome), qtdProducoesDirigidas(qtdProducoesDirigidas) {};
+    Diretor(string nome, int producoesDirigidas) : Pessoa(nome), producoesDirigidas(producoesDirigidas) {};
 
-    inline int getQtdProducoesDirigidas() const noexcept { return qtdProducoesDirigidas; };
-    inline int setQtdProducoesDirigidas(int qtdProducoesDirigidas) noexcept { return this->qtdProducoesDirigidas = qtdProducoesDirigidas; };
+    inline int getProducoes() const { return producoesDirigidas;};
+    inline int setProducoes(int producoesDirigidas) { return this->producoesDirigidas = producoesDirigidas;};
 
 private:
-    int qtdProducoesDirigidas;
+    int producoesDirigidas;
 };
 
-
-#endif //PROJETOFINAL_DIRETOR_H
+#endif //SMARTTV_DIRETOR_H

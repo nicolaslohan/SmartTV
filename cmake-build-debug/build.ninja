@@ -79,6 +79,18 @@ build CMakeFiles/SmartTV.dir/Streaming.cpp.o: CXX_COMPILER__SmartTV_Debug /home/
   OBJECT_DIR = CMakeFiles/SmartTV.dir
   OBJECT_FILE_DIR = CMakeFiles/SmartTV.dir
 
+build CMakeFiles/SmartTV.dir/Time.cpp.o: CXX_COMPILER__SmartTV_Debug /home/nascolas/CLionProjects/SmartTV/Time.cpp || cmake_object_order_depends_target_SmartTV
+  DEP_FILE = CMakeFiles/SmartTV.dir/Time.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/SmartTV.dir
+  OBJECT_FILE_DIR = CMakeFiles/SmartTV.dir
+
+build CMakeFiles/SmartTV.dir/SmartTV.cpp.o: CXX_COMPILER__SmartTV_Debug /home/nascolas/CLionProjects/SmartTV/SmartTV.cpp || cmake_object_order_depends_target_SmartTV
+  DEP_FILE = CMakeFiles/SmartTV.dir/SmartTV.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/SmartTV.dir
+  OBJECT_FILE_DIR = CMakeFiles/SmartTV.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SmartTV
@@ -87,7 +99,7 @@ build CMakeFiles/SmartTV.dir/Streaming.cpp.o: CXX_COMPILER__SmartTV_Debug /home/
 #############################################
 # Link the executable SmartTV
 
-build SmartTV: CXX_EXECUTABLE_LINKER__SmartTV_Debug CMakeFiles/SmartTV.dir/main.cpp.o CMakeFiles/SmartTV.dir/Producao.cpp.o CMakeFiles/SmartTV.dir/Filme.cpp.o CMakeFiles/SmartTV.dir/Serie.cpp.o CMakeFiles/SmartTV.dir/Streaming.cpp.o
+build SmartTV: CXX_EXECUTABLE_LINKER__SmartTV_Debug CMakeFiles/SmartTV.dir/main.cpp.o CMakeFiles/SmartTV.dir/Producao.cpp.o CMakeFiles/SmartTV.dir/Filme.cpp.o CMakeFiles/SmartTV.dir/Serie.cpp.o CMakeFiles/SmartTV.dir/Streaming.cpp.o CMakeFiles/SmartTV.dir/Time.cpp.o CMakeFiles/SmartTV.dir/SmartTV.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/SmartTV.dir
   POST_BUILD = :

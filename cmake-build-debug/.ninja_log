@@ -1,0 +1,9 @@
+# ninja log v5
+1	636	1671593894990159978	CMakeFiles/SmartTV.dir/main.cpp.o	5d5f084744acf3fb
+1	412	1671590642080514688	CMakeFiles/SmartTV.dir/Filme.cpp.o	38e5851aef709ccb
+1	374	1671591074436454951	CMakeFiles/SmartTV.dir/Serie.cpp.o	154c1a675736d9e1
+0	45	1671594009871206943	build.ninja	613040f69cddcaf4
+2	857	1671590592616063896	CMakeFiles/SmartTV.dir/Producao.cpp.o	4dfd79f0f8dbb078
+2	403	1671593911062306451	CMakeFiles/SmartTV.dir/Time.cpp.o	fafda71674419af3
+403	510	1671593911166307399	SmartTV	317e9cf40365793a
+1	525	1671592330679903686	CMakeFiles/SmartTV.dir/Streaming.cpp.o	afeeaded5726f7fd

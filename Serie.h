@@ -1,22 +1,22 @@
 //
-// Created by nascolas on 11/30/22.
+// Created by nascolas on 12/20/22.
 //
 
-#ifndef PROJETOFINAL_SERIE_H
-#define PROJETOFINAL_SERIE_H
+#ifndef SMARTTV_SERIE_H
+#define SMARTTV_SERIE_H
 #include "Producao.h"
 
 class Serie : public Producao{
 public:
-    Serie(string nome, int numEpisodios) : Producao(nome), numEpisodios(numEpisodios) {};
+    Serie(string nome, int episodios) : Producao(nome), episodios(episodios) {};
 
-    inline int getNumEpisodios() const noexcept { return numEpisodios; };
-    inline int setNumEpisodios(int numEpisodios) noexcept { return this->numEpisodios = numEpisodios; };
+    inline int getEpisodios() const { return episodios; };
+    inline int setEpisodios(int episodios) { return this->episodios = episodios; };
 
     virtual void play();
 private:
-    int numEpisodios;
+    int episodios;
 };
 
 
-#endif //PROJETOFINAL_SERIE_H
+#endif //SMARTTV_SERIE_H

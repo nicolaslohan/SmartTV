@@ -1,21 +1,23 @@
 //
-// Created by nascolas on 11/30/22.
+// Created by nascolas on 12/20/22.
 //
 
-#ifndef PROJETOFINAL_ATOR_H
-#define PROJETOFINAL_ATOR_H
+#ifndef SMARTTV_ATOR_H
+#define SMARTTV_ATOR_H
+
+
 #include "Pessoa.h"
 
-class Ator : public Pessoa{
+class Ator : public Pessoa {
 public:
-    Ator(string nome, int tempoCarreira) : Pessoa(nome), tempoCarreira(tempoCarreira) {};
+    Ator(string nome, int carreira) : Pessoa(nome), carreira(carreira) {};
 
-    inline int getTempoCarreira() const noexcept { return tempoCarreira; };
-    inline int setTempoCarreira(int tempoCarreira) noexcept { return this->tempoCarreira = tempoCarreira; };
+    inline int getCarreira() const {return carreira;};
+    inline int setCarreira(int carreira) {return this->carreira = carreira;};
 
 private:
-    int tempoCarreira;
+    int carreira;
 };
 
 
-#endif //PROJETOFINAL_ATOR_H
+#endif //SMARTTV_ATOR_H

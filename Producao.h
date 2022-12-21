@@ -1,37 +1,39 @@
 //
-// Created by nascolas on 11/30/22.
+// Created by nascolas on 12/20/22.
 //
 
-#ifndef PROJETOFINAL_PRODUCAO_H
-#define PROJETOFINAL_PRODUCAO_H
+#ifndef SMARTTV_PRODUCAO_H
+#define SMARTTV_PRODUCAO_H
+
+
 #include "Diretor.h"
 #include "Ator.h"
 #include <vector>
 #include <iostream>
-using std::vector, std::cout, std::endl;
+using std::vector;
 
 class Producao {
 public:
-    Producao(string nome) : nome(nome), diretores({}), atores({}) {};
+    Producao(string nome) : nome(nome), listaAtores({}), listaDiretores({}) {};
 
     Producao adicionaAtor(Ator &);
-    Producao removeAtor(string);
-
     Producao adicionaDiretor(Diretor &);
+
+    Producao removeAtor(string);
     Producao removeDiretor(string);
 
-    inline string getNome() const noexcept { return nome; };
-    inline string setNome(string nome) noexcept { return this->nome = nome; };
-
-    void getDiretores() const;
     void getAtores() const;
+    void getDiretores() const;
 
-    virtual void play();
+    inline string getNome() const { return nome; };
+    inline string setNome(string nome) { return this->nome = nome; };
+
+    virtual void play() {};
+
 private:
     string nome;
-    vector<Diretor> diretores;
-    vector<Ator> atores;
+    vector<Ator> listaAtores;
+    vector<Diretor> listaDiretores;
 };
 
-
-#endif //PROJETOFINAL_PRODUCAO_H
+#endif //SMARTTV_PRODUCAO_H
