@@ -34,22 +34,22 @@ Producao Producao::removeDiretor(string nome) {
     return *this;
 }
 
-void Producao::getAtores() const {
-    if (listaAtores.size() < 1){
+void Producao::listarStaff() const {
+    if (listaDiretores.empty()){
+        cout << "Nenhum diretor foi adicionado." << endl;
+    }else {
+        cout << "* Diretores:" << endl;
+        for (int i = 0; i < listaDiretores.size(); i++){
+            cout << " - " << listaDiretores[i].getNome() << endl;
+        }
+    }
+    if (listaAtores.empty()){
         cout << "Nenhum ator foi adicionado." << endl;
     }else{
+        cout << "* Atores:" << endl;
         for (int i = 0; i < listaAtores.size(); i++){
-            cout << "  - " << listaAtores[i].getNome() << endl;
+            cout << " - " << listaAtores[i].getNome() << endl;
         }
     }
 }
 
-void Producao::getDiretores() const {
-    if (listaDiretores.size() < 1){
-        cout << "Nenhum diretor foi adicionado." << endl;
-    }else {
-        for (int i = 0; i < listaDiretores.size(); i++){
-            cout << "  - " << listaDiretores[i].getNome() << endl;
-        }
-    }
-}

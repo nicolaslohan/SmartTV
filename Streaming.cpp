@@ -29,8 +29,14 @@ Streaming Streaming::operator>>(string nome) {
 
 void Streaming::run() {
     int op;
-    cout << *this;
-    cout << endl << "Escolha um: ";
-    cin >> op;
-    listaProducoes[op-1]->play();
+
+    if (listaProducoes.empty()){
+        cout << "Não há produções disponíveis." << endl;
+    }else{
+        cout << *this;
+        cout << endl << "Escolha um: ";
+        cin >> op;
+        listaProducoes[op-1]->play();
+    }
+
 }

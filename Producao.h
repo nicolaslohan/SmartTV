@@ -8,13 +8,16 @@
 
 #include "Diretor.h"
 #include "Ator.h"
-#include <vector>
+
 #include <iostream>
+
+#include <vector>
 using std::vector;
 
 class Producao {
 public:
     Producao(string nome) : nome(nome), listaAtores({}), listaDiretores({}) {};
+    virtual ~Producao() = default;
 
     Producao adicionaAtor(Ator &);
     Producao adicionaDiretor(Diretor &);
@@ -22,8 +25,7 @@ public:
     Producao removeAtor(string);
     Producao removeDiretor(string);
 
-    void getAtores() const;
-    void getDiretores() const;
+    void listarStaff() const;
 
     inline string getNome() const { return nome; };
     inline string setNome(string nome) { return this->nome = nome; };

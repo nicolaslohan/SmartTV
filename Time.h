@@ -12,6 +12,7 @@ using std::setw;
 using std::setfill;
 using std::cout;
 using std::endl;
+using std::cin;
 
 class Time : public App{
 public:

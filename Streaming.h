@@ -14,6 +14,7 @@ class Streaming : public App {
     friend ostream &operator<<(ostream &, Streaming &);
 public:
     Streaming(string nome, string versao) : App(nome, versao), listaProducoes({}) {};
+    virtual ~Streaming() = default;
 
     Streaming operator<<(Producao &);
     Streaming operator>>(string);

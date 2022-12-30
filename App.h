@@ -11,6 +11,7 @@ using std::string;
 class App {
 public:
     App(string nome, string versao) : nome(nome), versao(versao) {};
+    virtual ~App() = default;
 
     inline string getNome() const { return nome; };
     inline string getVersao() const { return versao; };
@@ -18,7 +19,7 @@ public:
     inline string setNome(string nome) { return this->nome = nome; };
     inline string setVersao(string versao) { return this->versao = versao; };
 
-    virtual void run() {};
+    virtual void run() = 0;
 
 private:
     string nome;
